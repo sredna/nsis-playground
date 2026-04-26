@@ -922,7 +922,7 @@ Function .onInit
   ${GetParameters} $9
 
   ; Portable install mode
-  ; WinGet: WinGet: winget install --force -h -s winget -e NSIS --custom /P -l c:\NSIS
+  ; WinGet: winget install --force -h -s winget -e NSIS --custom /P -l c:\NSIS
   ; Manual: cmd /C for %A in (1,2) do @if %A==1 (set __COMPAT_LAYER=RunAsInvoker) else nsis-setup.exe /P /S /D=c:\NSIS
   ClearErrors
   ${GetOptions} $9 "/P" $1 
