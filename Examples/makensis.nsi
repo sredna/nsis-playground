@@ -928,6 +928,7 @@ Function .onInit
   ${GetOptions} $9 "/P" $1 
   ${IfNot} ${Errors}
     SectionSetFlags ${SecUninstallerAndAssoc} 0 ; Don't write to the registry
+    SectionSetFlags ${SecShortcuts} 0
   ${Else}
     ${MementoSectionRestore}
   ${EndIf}
